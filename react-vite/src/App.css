@@ -7,6 +7,15 @@
     color: #000;
 }
 
+.nav-principal--dark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(49, 3, 78);
+    color: #fff;
+}
+
 .nav-principal__item {
     margin: 0 1rem;
     cursor: pointer;

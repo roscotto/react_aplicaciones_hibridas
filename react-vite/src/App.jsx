@@ -3,15 +3,24 @@ import './App.css';
 
 //Componentes funcionales
 
-const Navbar = () => (
-      <nav>
-        <ul className="nav-principal">
-          <li className="nav-principal__item"><a href="">Home</a></li>
-          <li className="nav-principal__item"><a href="">Productos</a></li>
-          <li className="nav-principal__item"><a href="">Contacto</a></li>
-        </ul>
-      </nav>
-)
+const Navbar = ({ dark }) => 
+{
+  let className = "nav-principal";
+
+  if(dark){
+    className += " nav-principal--dark";
+  }
+
+  return(
+    <nav>
+      <ul className={className}>
+        <li className="nav-principal__item"><a href="">Home</a></li>
+        <li className="nav-principal__item"><a href="">Productos</a></li>
+        <li className="nav-principal__item"><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  )
+}
 
 
 const Header = () => {
@@ -19,7 +28,7 @@ const Header = () => {
   return(
     <header>
       <h1>Header</h1>
-      <Navbar />      
+      <Navbar dark={true} />      
     </header>
   )
 }
