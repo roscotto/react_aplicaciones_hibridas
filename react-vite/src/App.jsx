@@ -33,14 +33,25 @@ const Header = () => {
   )
 }
 
-
+const TituloSecundario = ({children}) => {
+  return(
+    <h2>{children}</h2>
+  )
+}
 
 function App()
 {
   return(
     <div>
       <Header />
-      <h2>Hola mundo</h2>
+      <TituloSecundario>
+        Título 1
+      </TituloSecundario>
+
+      <TituloSecundario>
+        <span>Título 2</span>
+      </TituloSecundario>
+
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat tempora beatae modi, iste repellendus ad aliquid minus necessitatibus nesciunt accusamus esse harum est, veniam recusandae alias dolores magnam error!</p>
     </div>
   )
