@@ -1,11 +1,14 @@
+import './App.css';
+
+
 //Componentes funcionales
 
 const Navbar = () => (
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Productos</li>
-          <li>Contacto</li>
+        <ul className="nav-principal">
+          <li className="nav-principal__item"><a href="">Home</a></li>
+          <li className="nav-principal__item"><a href="">Productos</a></li>
+          <li className="nav-principal__item"><a href="">Contacto</a></li>
         </ul>
       </nav>
 )

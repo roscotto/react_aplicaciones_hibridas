@@ -1,0 +1,13 @@
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(212, 143, 255);
+    color: #000;
+}
+
+.nav-principal__item {
+    margin: 0 1rem;
+    cursor: pointer;
+}
