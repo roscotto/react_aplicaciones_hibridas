@@ -32,7 +32,8 @@ const Navbar = ({ dark, links }) =>
 
 const Header = () => {
   //código js
-  // variable y dispatcher (función que modifica el estado)
+  // variable y dispatch (función que modifica el estado)
+  // funciones que empiezan con use son hooks - ganchos
   const [links, setLinks] = useState([ //creo un estado con un array de objetos como valor inicial
     {url: "#", texto: "Home"},
     {url: "#", texto: "Productos"},
