@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-
+import './GamesList.jsx';
+import GamesList from './GamesList.jsx';
 
 //Componentes funcionales
 
@@ -102,9 +103,7 @@ function App()
         Título 1
       </TituloSecundario>
 
-      <TituloSecundario>
-        <span>Título 2</span>
-      </TituloSecundario>
+      <GamesList />
       
      
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat tempora beatae modi, iste repellendus ad aliquid minus necessitatibus nesciunt accusamus esse harum est, veniam recusandae alias dolores magnam error!</p>
